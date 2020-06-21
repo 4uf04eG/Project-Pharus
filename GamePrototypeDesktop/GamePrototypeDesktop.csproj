@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <PackageIconUrl>Icon.bmp</PackageIconUrl>
+        <ApplicationIcon>Icon.ico</ApplicationIcon>
+        <Title>Project Pharus</Title>
+        <Authors>Ilya; Masha</Authors>
+        <Product>Project Pharus</Product>
+        <AssemblyName>Project Pharus</AssemblyName>
+        <TargetFramework>netcoreapp2.0</TargetFramework>
+        <PackageId>Project Pharus</PackageId>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <EmbeddedResource Include="Icon.bmp" />
+        <EmbeddedResource Include="Icon.ico" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <MonoGameContentReference Include="**\*.mgcb" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MonoGame.Content.Builder" Version="3.7.0.9" />
+        <PackageReference Include="MonoGame.Framework.DesktopGL.Core" Version="3.7.0.7" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Content\Fonts" />
+      <Folder Include="Graphics\Shaders" />
+    </ItemGroup>
+
+</Project>
